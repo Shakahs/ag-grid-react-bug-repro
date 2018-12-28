@@ -1126,6 +1126,18 @@ address@1.0.3, address@^1.0.1:
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
+ag-grid-community@^19.1.4:
+  version "19.1.4"
+  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-19.1.4.tgz#fc74d0dae3cac954e1cc977d6a4d7fee5321d809"
+  integrity sha512-il498Bek+OTVyhMs6MgJlgUVQKBDuoUwVNFy3c93U5ulWaMHOVfmVxpKdv1UkqfDwnaPhQrx/hNDQ32BuBud8g==
+
+ag-grid-react@^19.1.2:
+  version "19.1.2"
+  resolved "https://registry.yarnpkg.com/ag-grid-react/-/ag-grid-react-19.1.2.tgz#e1d29d19b0993301a468648d034aec245afa6935"
+  integrity sha512-87XaXdtuvy2/krFhyFfocIstRCwRX8G0uYBq78SD8VUoblEXN0nA77mStjMdfbjPbU+GxIbdULKOEdqlHVoDcg==
+  dependencies:
+    prop-types "^15.6.2"
+
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
@@ -7852,7 +7864,7 @@ react-dev-utils@^7.0.0:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
-react-dom@16.7.0:
+react-dom@^16.7.0:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   integrity sha512-D0Ufv1ExCAmF38P2Uh1lwpminZFRXEINJe53zRAbm4KPwSyd6DY/uDoS0Blj9jvPpn1+wivKpZYc8aAAN/nAkg==
@@ -7922,7 +7934,7 @@ react-scripts@2.1.2:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.7.0:
+react@^16.7.0:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
   integrity sha512-StCz3QY8lxTb5cl2HJxjwLFOXPIFQp+p+hxQfc8WE0QiLfCtIlKj8/+5tjjKm8uSTlAW+fCPaavGFS06V9Ar3A==
