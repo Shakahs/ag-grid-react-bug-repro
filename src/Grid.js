@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {AgGridReact, AgGridColumn, AgGridColumnProps} from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 
 
 class FlightTable extends React.Component {
@@ -18,19 +17,17 @@ class FlightTable extends React.Component {
         super(props);
         this.state = {
             columnDefs: [
-                {field:"icao"},
-                {field:"origin"},
-                {field:"destination"},
-                {field:"model"}
+                {headerName: "Make", field: "make"},
+                {headerName: "Model", field: "model"},
+                {headerName: "Price", field: "price"}
+
             ],
-            mockData: [{icao:'abc',origin:'lax',destination:'nyc',model:'747'}]
-        };
-
-        this.getRowNodeId = this.getRowNodeId.bind(this);
-    }
-
-    getRowNodeId(data) {
-        return data.icao;
+            rowData: [
+                {make: "Toyota", model: "Celica", price: 35000},
+                {make: "Ford", model: "Mondeo", price: 32000},
+                {make: "Porsche", model: "Boxter", price: 72000}
+            ]
+        }
     }
 
     render() {
@@ -40,23 +37,16 @@ class FlightTable extends React.Component {
                     className="ag-theme-balham"
                     style={{
                         height: '500px',
-                        width: '600px' }}
+                        width: '600px'
+                    }}
                 >
                     <AgGridReact
-                        // columnDefs={this.colDefs}
-                        // enableSorting={true}
-                        // enableFilter={true}
                         columnDefs={this.state.columnDefs}
-                        //@ts-ignore
-                        // deltaRowDateMode={true}
-                        // rowData={this.props.demoData.displayedDemographics}>
-                        rowData={this.state.mockData}>
-                        {/*rowData={sampleSize(demoData.displayedDemographics, 1000)}>*/}
-                        getRowNodeId={(data)=>{return data.icao}}
-                        {/*getRowNodeId={this.getRowNodeId}*/}
-                        >
+                        rowData={this.state.rowData}>
+                        getRowNodeId={(data)=>{return data.make}}
                     </AgGridReact>
                 </div>
+
             </div>
         )
     }
