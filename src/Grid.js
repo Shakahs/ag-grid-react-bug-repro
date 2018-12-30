@@ -43,7 +43,7 @@ class FlightTable extends React.Component {
                     <AgGridReact
                         columnDefs={this.state.columnDefs}
                         rowData={this.state.rowData}>
-                        getRowNodeId={(data)=>{return data.make}}
+                        {/*getRowNodeId={(data)=>{return data.make}}*/}
                     </AgGridReact>
                 </div>
 
